@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Riccardo Di Nicola — Cortex Studio, software su misura per PMI">
+  <style>
+    .t { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .in { animation: in .8s cubic-bezier(.2,.7,.2,1) both; }
+    .d1 { animation-delay: .1s } .d2 { animation-delay: .35s } .d3 { animation-delay: .6s } .d4 { animation-delay: .85s }
+    @keyframes in { from { opacity: 0; transform: translateY(14px) } }
+    .cur { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0 } }
+    .dot { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    @keyframes pulse { 50% { opacity: .25 } }
+    .line { stroke-dasharray: 1400; animation: draw 2.2s .3s ease-out both; }
+    @keyframes draw { from { stroke-dashoffset: 1400 } to { stroke-dashoffset: 0 } }
+  </style>
+  <rect width="1200" height="300" rx="18" fill="#14161a"/>
+  <g opacity=".07" stroke="#f7f6f2">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M200 0V300M400 0V300M600 0V300M800 0V300M1000 0V300"/>
+  </g>
+  <path class="line" d="M760 285 C 900 285, 960 200, 1040 170 S 1110 120, 1140 110" fill="none" stroke="#ff5a1f" stroke-width="2.5"/>
+  <circle class="dot" cx="1140" cy="110" r="7" fill="#ff5a1f"/>
+
+  <text x="60" y="78" class="m in d1" fill="#ff5a1f" font-size="18" letter-spacing="2">CORTEX STUDIO · FOUNDER</text>
+  <text x="60" y="150" class="t in d2" fill="#f7f6f2" font-size="64" font-weight="800" letter-spacing="-1.5">Riccardo Di Nicola</text>
+  <text x="60" y="198" class="t in d3" fill="#f7f6f2" fill-opacity=".72" font-size="26">Software su misura per PMI: automazioni, integrazioni, AI applicata.</text>
+  <text x="60" y="262" class="m in d4" fill="#f7f6f2" fill-opacity=".5" font-size="17">$ ship --to production --for real-businesses<tspan class="cur" fill="#ff5a1f">▍</tspan></text>
+</svg>
